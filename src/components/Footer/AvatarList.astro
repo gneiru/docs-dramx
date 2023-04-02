@@ -4,9 +4,9 @@ type Props = {
 	path: string;
 };
 const { path } = Astro.props;
-const resolvedPath = `examples/docs/${path}`;
-const url = `https://api.github.com/repos/gneiru/dramx-docx/commits?path=${resolvedPath}`;
-const commitsURL = `https://github.com/gneiru/dramx-docx/commits/master/${resolvedPath}`;
+const resolvedPath = `${path}`;
+const url = `https://api.github.com/repos/gneiru/docs-dramx/commits?path=${resolvedPath}`;
+const commitsURL = `https://github.com/gneiru/docs-dramx/${resolvedPath}`;
 
 type Commit = {
 	author: {
