@@ -1,6 +1,6 @@
 export const SITE = {
-	title: 'Dramx Docs',
-	description: 'Your website description.',
+	title: 'Dramx',
+	description: 'Docx of Dramx Kit Endpoint',
 	defaultLanguage: 'en-us',
 } as const;
 
@@ -8,18 +8,19 @@ export const OPEN_GRAPH = {
 	image: {
 		src: 'https://github.com/withastro/astro/blob/main/.github/assets/banner.png?raw=true',
 		alt:
-			'astro logo on a starry expanse of space,' +
-			' with a purple saturn-like planet floating in the right foreground',
+			'korean drama' +
+			'anime',
 	},
-	twitter: 'astrodotbuild',
+	twitter: 'gneiru',
 };
 
 export const KNOWN_LANGUAGES = {
 	English: 'en',
+	Filipino: 'fil'
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
-export const GITHUB_EDIT_URL = `https://github.com/withastro/astro/tree/main/examples/docs`;
+export const GITHUB_EDIT_URL = `https://github.com/gneiru/docs-dramx/tree/master`;
 
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
 
@@ -36,11 +37,27 @@ export type Sidebar = Record<
 >;
 export const SIDEBAR: Sidebar = {
 	en: {
-		'Section Header': [
+		'Getting Started': [
 			{ text: 'Introduction', link: 'en/introduction' },
-			{ text: 'Page 2', link: 'en/page-2' },
-			{ text: 'Page 3', link: 'en/page-3' },
 		],
-		'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
+		'Anime': [
+			{ text: 'Search Series', link: 'en/anime/search' },
+			{ text: 'Top Airing', link: 'en/anime/top-airing' },
+			{ text: 'Series Info', link: 'en/anime/info' },
+			{ text: 'Recent Release', link: 'en/anime/recent' },
+			{ text: 'Episode Sources', link: 'en/anime/episode' },
+		],
+	},
+	fil: {
+		'Getting Started': [
+			{ text: 'Introduction', link: '/fil/introduction' },
+		],
+		'Anime': [
+			{ text: 'Search  Series', link: 'fil/anime/search' },
+			{ text: 'Top Airing', link: 'fil/anime/top-airing' },
+			{ text: 'Series Info', link: 'fil/anime/info' },
+			{ text: 'Recent Release', link: 'fil/anime/recent' },
+			{ text: 'Episode Sources', link: 'fil/anime/episode' },
+		],
 	},
 };
