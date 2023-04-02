@@ -7,7 +7,7 @@ Get a list of top-airing anime series
 
 ## Base URL
 
-```code
+```
 https://dramx.vercel.app/api/anime/top-airing
 ```
 ---

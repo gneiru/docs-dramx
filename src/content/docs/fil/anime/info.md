@@ -7,7 +7,7 @@ Get details of an Anime Series
 
 ## Base URL
 
-```code
+```
 https://dramx.vercel.app/api/anime/{series-name}
 ```
 ---

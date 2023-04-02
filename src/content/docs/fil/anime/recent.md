@@ -7,7 +7,7 @@ Get a list of recently added episodes
 
 ## Base URL
 
-```code
+```
 https://dramx.vercel.app/api/anime/recent
 ```
 ---

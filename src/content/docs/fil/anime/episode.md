@@ -7,7 +7,7 @@ Get source of a particular episode
 
 ## Base URL
 
-```code
+```
 https://dramx.vercel.app/api/anime/watch/{episode-id}
 ```
 ---
